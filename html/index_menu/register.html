@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../../css/login&register.css">
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/index_menu.js"></script>
+</head>
+<body onload="Init()">
+    <div class="menu">
+        <span class="option"><img src="../../image/home.png" onclick="backindex()"></span>
+    </div>
+    <div class="box">
+        <p>注册</p>
+        <p>名&emsp;字&emsp;：<input type="name" placeholder="请输入您的用户名" class="inputbox" id="name"></p>
+        <p>QQ&nbsp;账号&nbsp;：<input type="text" placeholder="请输入您的QQ账号" class="inputbox" id="validation"></p>
+        <p>密&emsp;码&emsp;：<input type="password" placeholder="请输入您的密码" class="inputbox" id="password"></p>
+        <p>确认密码：<input type="password" placeholder="请确认您的密码" class="inputbox" id="confirmpassword"></p>
+        <p><input type="button" value="注册并登录" class="reg-icon" onclick="register()"></p>
+        <p><input type="button" value="返回登录页面" class="reg-icon" onclick="backlogin()"></p>
+    </div>
+</body>
+</html>

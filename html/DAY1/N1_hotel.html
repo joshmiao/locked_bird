@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>酒店</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/N1_hotel.jpg");}</style>
+</head>
+<body onload="Initial(12)" onkeydown="nextlog(event)"> 
+    <div id="selection-set">
+        <p><input type="button" value="睡觉" class="selection_icon" onclick="travel('../DAY2/D2_residence-community1.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">一天的调查已经让你身心俱疲。跟随着芯片的指引，你走入一家酒店。</p>
+        <p class="text" id="text2">大厅的天花板挑高了不少，配着中央不间断的喷泉与周围典雅大气的装扮，仿佛置身上世纪王侯公爵的庄园内。</p>
+        <p class="text" id="text3">前台的工作人员见你到来，遂主动上前，伸手接过你们手中的行李。他们没有询问你们的姓名，却仿佛知道了你们的身份。其中的一位将房卡递给了你们，并微笑着祝福：“祝您旅途愉快。”</p>
+        <p class="text" id="text4">在你入住之前，他告知了你旅游的注意事项，介绍了酒店的服务，并为你推荐了景点。你还从他口中得知：是一位浮空层的大人物替他们安排的酒店。</p>
+        <p class="text" id="text5">躺在床上，一天的疲累和紧张终于得以释放——尽管今天时不时地感到被监视，不过……</p>
+        <p class="text" id="text6">【你】：既然是长东的高层为我安排的入住，那么至少今晚能一切平安……</p>
+        <p class="text" id="text7">疲倦涌上来，片刻间，你的意识便消散于一片混沌。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

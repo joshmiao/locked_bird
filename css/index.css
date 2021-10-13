@@ -1,0 +1,60 @@
+/*主页样式文件*/
+@import url(fonts.css);
+*{margin: 0;padding: 0;}
+body{
+    background:url(../image/index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#account{
+    position: absolute;
+    top: 15px ;
+    right: 20px ;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgba(250, 235, 215, 0.534);
+    font: 40px FZZhaoMFKSJF;
+}
+/*标题*/
+#title{
+    margin-left: 380px;
+    margin-top: 10px;
+    height: 400px;
+    width: 800px;
+}
+/*主页按钮位置*/
+#line1{
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+}
+#line2{
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+}
+
+/*主页按钮格式*/
+.index-icon{
+    width: 200px; 
+    height:100px;
+    font:35px HYShangWeiShouShuW-Regular;
+    transition-duration: 0.6s;
+    margin-top: 10px;
+    background-color: rgba(77, 75, 75, 0.418);
+    border-radius: 20px;
+    color: rgb(215, 221, 221);
+}
+input:hover{
+    font-size:40px;
+    background-color: rgba(231, 157, 18, 0.459);
+    cursor: url(../image/pointer.ico),auto;
+}
+/*可选背景音乐*/
+audio{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

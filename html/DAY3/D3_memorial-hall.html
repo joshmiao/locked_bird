@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>纪念馆</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_memorial-hall.jpg");background-size: cover;}</style>
+</head>
+<body onload="Initial(28)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="去图书馆看看" class="selection_icon" onclick="travel('D3_library.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这是一个独栋式的建筑，装修风格庄重而不失华丽。烫金的门牌上写着三个字——“纪念馆”。</p>
+        <p class="text" id="text2">在门牌一边立着的牌子上则额外批注了一句话——“谨以此纪念馆纪念为长东做出卓越贡献的晓夫人及其后代。”</p>
+        <p class="text" id="text3">【你】：后代？看来不止一位了？现任市长西宫止应该算，但还有谁？</p>
+        <p class="text" id="text4">怀着疑问，你走进了纪念馆。纪念馆内部的装修风格跟外部没有区别，一样的庄重大气，暖色的灯光打在过道上，衬得这里极具历史感。你走在一条过道上，两侧挂着一些画像，下面批注着相关的历史：</p>
+        <p class="text" id="text5">275/12/20西宫仪赴长东市任职，携其夫人和儿子抵达长东</p>
+        <p class="text" id="text6">276/1/1西宫仪正式接任市长工作，晓夫人的实验室成立，“主脑”蓝图初步构造</p>
+        <p class="text" id="text7">280/6/6第一代“主脑”正式运作，同时晓夫人萌生建立浮空层的想法</p>
+        <p class="text" id="text8">280/12/10有关建设浮空层的提案通过</p>
+        <p class="text" id="text9">285/6/24浮空层正式建立成功，西宫仪之子与本地官员女儿结婚后诞下两子，即为西宫初、西宫止</p>
+        <p class="text" id="text10">287/2/15第二代“主脑”开始运作，同时上层对长东所有居民进行“编码”计划</p>
+        <p class="text" id="text11">287-302长东经济飞速发展，在两年成为了国家名列前茅的经济城市，物价也随之上涨，西宫仪不再担任市长，但晓夫人的实验室仍未解散，继续为长东服务</p>
+        <p class="text" id="text12">最后的画像上是一个非常俊秀的青年，与最初那副画上的晓夫人有一丝相似，五官偏柔和，但也有着男子的英气。在这幅画像下方的历史写的是——第三代“编码”系统建立者。</p>
+        <p class="text" id="text13">【你】：真是名门望族，一个家族让一个城市重获新生。</p>
+        <p class="text" id="text14">你感叹着，同时又好奇起西宫初来。按理说，即使不问政治，作为现任市长的弟弟，西宫初怎么也不该默默无闻；但事实是，自从自己来到长东，还从未听到过任何有关他的消息。</p>
+        <p class="text" id="text15">【你】：莫非……他也像那些失踪案的受害人一样，人间蒸发了？……不，不可能，真有这么大的事，自己早就知道了。所以……为什么？</p>
+        <p class="text" id="text16">你毫无头绪，带着比进入时更多的疑惑离开了纪念馆。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

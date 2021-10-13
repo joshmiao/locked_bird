@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>商业区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D1_business-area.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(3);
+            addclue("A",10);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <img src="../../image/pegion_undiscovered.png" class="pigeon" id="pigeon_1" onclick="pegion_discovered()">
+    <div id="selection-set">
+        <p><input type="button" value="去纪念品店看看" class="selection_icon" onclick="travel('D1_souvenir-shop.html')"></p>
+        <p><input type="button" value="先在街道上走走" class="selection_icon" onclick="travel('D1_street.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">【你】：奇怪，请求明明是由城市的高层亲自发出，现在为何避而不见，还将我视作普通游客？罢了，名副其实的旅游与科技之都，有点心气很正常。毕竟是来给人帮忙的，得服从人家的管理。</p>
+        <p class="text" id="text2">这样想着，你将那群人交给你的芯片保管妥当。在引领下，你穿过了城门前的蓝色光幕，眼前的景色忽的开阔起来。</p>
+        <p class="text" id="text3">一条宽阔而又长的道路自你们的脚下延伸向远方，两侧林立着高楼，玻璃制的外貌使它们并没有压迫感，反而跟天空融为了一体，明亮清爽。</p>
+        <p class="text" id="text4">【你】：正好在城门口，看来这就是商业街了。看打扮，来往的人中游客居多，本地居民好像很少……咦？</p>
+        <p class="text" id="text5">一家纪念品商店吸引了你的注意。从店外看，能看见窗内堆成小山的礼物盒，上面绑着优美的丝带，颜色缤纷。</p>
+        <p class="text" id="text6">【你】：前面这家纪念品店风格不太一样，不如进去看看？</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

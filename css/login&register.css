@@ -1,0 +1,53 @@
+/*登录注册页面样式文件*/
+@import url(fonts.css) ;
+body{
+    background:url(../image/game_background/6.jpg) no-repeat center -95px;
+}
+/*功能菜单*/
+.menu{ 
+    margin-top: 0px;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.menu:hover{ 
+    background-color: rgba(231, 157, 18, 0.459);
+    transition-duration: 0.4s;
+    cursor: url(../image/pointer.ico),auto;
+}
+/*登录注册模块盒子*/
+.box { 
+    margin:auto; 
+    padding: 30px; 
+    width: 600px; 
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgba(219, 224, 224, 0.979);
+    text-align: center;
+    font: 40px HYShangWeiShouShuW-Regular;
+}
+/*信息输入框*/
+.inputbox{
+    height:50px;
+    width:350px;
+    border-radius: 10px;
+    text-align: left;
+    font: 40px HYShangWeiShouShuW-Regular;
+}
+/*登录注册按钮*/
+.reg-icon{
+    margin-top: 10px;
+    width: 320px; 
+    height:100px;
+    border-radius: 20px;
+    background-color: rgba(77, 75, 75, 0.5);
+    color: rgb(215, 221, 221); 
+    font:35px HYShangWeiShouShuW-Regular;
+}
+input.reg-icon:hover  {
+    font-size:40px;
+    background-color: rgba(231, 157, 18, 0.459);
+    cursor: url(../image/pointer.ico),auto;
+    transition-duration: 0.5s;
+}

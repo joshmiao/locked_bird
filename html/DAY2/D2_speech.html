@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>演讲现场</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_speech.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(19);
+            addclue("A",30);
+            addclue("B",30);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)"> 
+    <div id="selection-set">
+        <p><input type="button" value="回到连接区" class="selection_icon" onclick="travel('D2_connection-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">不知何时开始，广场上的人逐渐多了起来，直至多到组成了一场聚会。这仿佛是一场不属于这里的聚会，若干居民聚集在这个地方，肩并肩，全部都望着最前方的讲台上的那道身影，专注不已。你还发现有一部分的人眼神非常狂热，仿佛在参加什么狂信徒的聚会。</p>
+        <p class="text" id="text2">台上的人穿得严严实实，没有露出一丝皮肤，透过话筒传来的声音低沉而不失感染力，他正发表着一场盛大的演讲。那是一个高瘦的男人，听声音像是一个青年或壮年，总之年纪不算太大，他的演讲非常有感染力，带动了整个现场的气氛。</p>
+        <p class="text" id="text3">你忽然发现无法使用自己的芯片了，这里的信号似乎被用某种手段屏蔽了，你无法通过芯片与人联系，也无法使用任何功能，你的电子产品也一样。</p>
+        <p class="text" id="text4">【青年】：“人生的旅途总免不了磨难，遗憾和悲伤将不时伴随着你走过一段艰难的道路。我们出生在长东，那份艰难与磨难只不过是提前了罢了，世界上的每个人都没有什么不同，即使是我们，前路也仍然光明。”</p>
+        <p class="text" id="text5">【青年】：“我不过是芸芸众生中普通的一员，却依旧希望能为长东的人们做些微不足道的事，我不能带领你们走向真正的光明，但我势必会为那位真正的领袖开辟前行的道路。”</p>
+        <p class="text" id="text6">【青年】：“我希望每个人都能平等的活在世上，我也打算那样去做。”</p>
+        <p class="text" id="text7">【青年】：“抬起头，看看笼罩我们的黑暗——那不应当是属于我们的黑暗，蔚蓝的天空之下才是我们的归宿。”</p>
+        <p class="text" id="text8">【青年】：“向前进吧，为了自我，为了自由，为了蔚蓝的天空。”</p>
+        <p class="text" id="text9">你越来越感到热血沸腾，仿佛那久违的、“幼稚”的理想再一次回到了你的身上。</p>
+        <p class="text" id="text10">青年凌厉的目光、居民麻木的眼神、反差巨大的城区……一切的一切在你的脑海中激荡回旋，一个想法悄然而生。</p>
+        <p class="text" id="text11">演讲结束后，你跟上这位青年。他顺从了你的邀请，在离开讲台后停了下来，与你对视，静静聆听你的话语，</p>
+        <p class="text" id="text12">一时间，竟然跟之前瞥见的安静的鸟有些相似。</p>
+        <p class="text" id="text13">【青年】：……旅鸽的本意是为了解放那些囚禁在编码系统之中的长东居民。然而事与愿违，不知是否是因为被压抑了太久，居民们爆发出来的情绪过于激烈可怕了，他们把解救他们的领导者——也就是我——视作神明，个人崇拜问题非常严重。可以说，旅鸽这个组织是被我一人维系起来的一个组织，一旦我出了什么意外，这个组织就会土崩瓦解。……</p>
+        <p class="text" id="text14">他耐心地回答了你的几乎所有问题——在涉及到自己的过去时，青年才会稍稍有些沉默，说得比较隐晦。</p>
+        <p class="text" id="text15">你们没有交谈太久，很快青年的跟随者就前来打断你们的对话。</p>
+        <p class="text" id="text16">【青年】：还请你不要把这里的一切说出去。</p>
+        <p class="text" id="text17">说着，他递给你一只像是纸折的千纸鹤，跟随者们用一种奇怪的眼神看着你。这只千纸鹤貌似是某种特殊的通讯道具，你的芯片似乎就是被他影响而无法运作的，除此之外你再也看不出什么了。</p>
+        <p class="text" id="text18">你突然想起来：这个千纸鹤的材质和之前在废品堆中见到的东西有点相似。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

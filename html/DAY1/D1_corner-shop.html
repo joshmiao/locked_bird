@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>街边小店</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D1_corner-shop.jpg");}</style>
+</head>
+<body onload="Initial(8)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="有条隐蔽通道？" class="selection_icon" onclick="travel('D1_tunnel.html')"></p>
+        <p><input type="button" value="夜幕降临" class="selection_icon" onclick="travel('N1_night-falls.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">由于工业区人流不多，更不是旅游热点，这里只有几家零落的小店，门前客人稀少，跟刚刚的商业区比起来可以说是冷清到了极点，不过摊子上的东西看上去似乎有些有趣。</p>
+        <p class="text" id="text2">店面上并没有人类的踪影，不过一旁立着一个矮小的机器，不断扭头查看着四周。</p>
+        <p class="text" id="text3">摊子上放着一些样貌奇特的东西，你判断出那材质不一般，似乎是可以用于防身的物品。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

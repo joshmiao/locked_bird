@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>街道</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D1_street.jpg");}</style>
+</head>
+<body onload="Initial(4),hideoption(1,0,0,0,5,0);" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="买点纪念品去" class="selection_icon" id="option1" onclick="travel('D1_souvenir-shop.html')"></p>
+        <p><input type="button" value="去工业区调查情况" class="selection_icon" onclick="travel('D1_industrial-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">你漫步街头。两侧的高大建筑挡住了正午过于热烈的阳光，偶尔有飞鸟鸣叫，混在人声中也能听清；周遭和煦不已，这里宁静安稳，街道上干干净净没有一丝灰尘和垃圾。</p>
+        <p class="text" id="text2">【你】：如果有机会，以后再来看看也不失为一个好选择。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

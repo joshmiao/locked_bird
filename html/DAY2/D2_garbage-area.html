@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>垃圾区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_garbage-area.png");}</style>
+    <script>
+        function loadgame(){
+            Initial(22);
+            if (getclue("A")<100) $("#option1").hide();else $("#option2").hide();
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="进入第三天" class="selection_icon" id="option1" onclick="travel('../DAY3/D3_business-area.html')"></p>
+        <p><input type="button" value="艰难的调查旅途" class="selection_icon" id="option2" onclick="travel('../game-results/R6_too-hard-for-me.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这是一堆又一堆垃圾，散发着恶臭的气味，几乎熏得你要晕过去。整个城市的垃圾仿佛都在这里了。眼尖的你发现垃圾里藏着几把枪和其他武器——武器！</p>
+        <p class="text" id="text2">【你】：革命，这是革命的前夜！革命，马上就要爆发了！</p>
+        <p class="text" id="text3">生于黑暗，追求光明；处在如此恶劣的环境之中，意志却仍能坚硬如铁……那个悄然而生的想法在脑海中迅速生根发芽，成为一股摧枯拉朽的精神力量。</p>
+        <p class="text" id="text4">纵使身份判若云泥，然而，在心中，你早已把自己当做他们中的一员。</p>
+        <p class="text" id="text5">【你】：要为所有人的幸福开辟道路，为所有人的自我实现牺牲一切！！</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

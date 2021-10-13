@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>工业区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D1_industrial-area.jpg");}</style>
+</head>
+<body onload="Initial(6),hideoption(1,0,0,0,7,0)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="先去工厂调查一番" class="selection_icon" id="option1" onclick="travel('D1_factory.html')"></p>
+        <p><input type="button" value="附近小店不错，去逛逛" class="selection_icon" onclick="travel('D1_corner-shop.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">【你】：商场和街道的人群主要是外地游客，在这里工作的本地人只负责卖东西，可能也不会知道太多。不如去工业区看看。</p>
+        <p class="text" id="text2">穿过一栋又一栋高楼，离开关卡前繁华的商业区，向西走，出现在你眼前的是白色的工厂。</p>
+        <p class="text" id="text3">炊烟袅袅，却并没有刺鼻的味道；流经这里的河流清澈无比，你甚至能看见河底嬉戏的鱼。可以看出，长东的环境治理做得很不错。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

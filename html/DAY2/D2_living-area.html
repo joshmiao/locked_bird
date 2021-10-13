@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>生活区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_living-area.jpg");}</style>
+    <script>
+        function changeoption()
+        {
+            if(sessionStorage.getItem("locked_bird_jigsaw-result")==null)
+            sessionStorage.setItem("locked_bird_jigsaw-result",false);
+            if(sessionStorage.getItem("locked_bird_jigsaw-result")=="true")
+            $("#option2").val("去实验室看看（已解锁）");
+        }
+        function loadgame(){
+            Initial(18);
+            addclue("A",10);
+            hideoption(1,0,0,0,20,0);
+            hideoption(2,60,0,0,21,0);
+            changeoption();
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="去酒吧看看" class="selection_icon" id="option1" onclick="travel('D2_bar.html')"></p>
+        <p><input type="button" value="去实验室看看（需要游戏解锁）" class="selection_icon" id="option2" onclick="jigsawgame()"></p>
+        <p><input type="button" value="去垃圾区看看" class="selection_icon" onclick="travel('D2_garbage-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这里是与长东风格相反的地方，充满了科技发展之前的小乡镇气息，完全不像是一个科技城市应该有的地方。</p>
+        <p class="text" id="text2">不过这样的场景倒也算别有一番风味。特别与外部的脏乱比起来，这里显得更加美丽。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

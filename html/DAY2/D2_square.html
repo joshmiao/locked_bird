@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>广场</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_square.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(15);
+            addclue("A",20);
+            addclue("B",20);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="回到居民区" class="selection_icon" onclick="travel('D2_residence-community1.html')"></p>
+        <p><input type="button" value="看看广场屏幕" class="selection_icon" onclick="travel('D2_screen.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">和居民区的其他区域一样，这里依然没有什么人气，不过眼尖的你还是发现了一个人走过。</p>
+        <p class="text" id="text2">那是一个看着有些阴郁的青年，他似乎有些浑浑噩噩，精神状况不是很好，但身体完全看不出来有任何疾病。</p>
+        <p class="text" id="text3">【你】：您好！请问……</p>
+        <p class="text" id="text4">【青年】：“买东西吃去……”</p>
+        <p class="text" id="text5">他咕哝着，甚至没正眼看你，似乎是对你冒然的搭话很不情愿。</p>
+        <p class="text" id="text6">【你】：哦，那不多打扰您了。不过我很好奇一件事：长东的货币是什么，又是如何运作的呢？</p>
+        <p class="text" id="text7">本没想得到多么全面的答案，可出乎意料的是，青年那迷茫、麻木的眼神陡然变得凌厉。那眼神中混杂着无奈、不满、失望、愤怒甚至是仇恨，与之前的简直判若两人——他开始向你诉说一切。</p>
+        <p class="text" id="text8">【青年】：“货币”？……哈哈哈，“货币”！</p>
+        <p class="text" id="text9">【青年】：什么是“货币”？我怎么没听说过？哈哈哈哈……</p>
+        <p class="text" id="text10">【青年】：那群在上面的人和他们的机器走狗，每个月给我们施舍点残羹剩饭，让我们活着——活，着！那堆铁包了工作，只剩下一点点富得流油的职位给人干，我们这些生得不好的人根本干不了！</p>
+        <p class="text" id="text11">听着青年的讲述，你越来越震惊。与想象中的完全不同，长东一片繁华的表面下其实隐藏着巨大的不平等。但同时，这也说明青年确实很熟悉长东，你赶忙把自己想问的问题说出。</p>
+        <p class="text" id="text12">【青年】：……你说失踪？你好奇这干啥？最近是很多，但一两年前就有了。那些运气好的还能在第二天找着，记得是给他们脑子里的芯片弄死了，不过好歹有个全尸；运气不好的就直接蒸发，连根毛都找不见……等等，不对，那些找着的都没了脑子，不算全尸，哈哈哈哈！他们没活干，和我们一样！哈哈哈哈哈……</p>
+        <p class="text" id="text13">“都在公告板上写着呢，想知道就看看吧……”一通简直是发泄的倾诉过后，青年又恢复了那副阴郁的模样。他随意地扔下了一句话，便如同来时那样无声地走开了。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

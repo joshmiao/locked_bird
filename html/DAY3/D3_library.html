@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>图书馆</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_library.jpg");}</style>
+</head>
+<body onload="Initial(30)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="发现了藏着的实验室" class="selection_icon" onclick="travel('D3_laboratory.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">偌大的图书馆里林列着各类图书，这里并没有图书管理员，倒是有几台以供查阅书籍的机器。由于正在上课时间，这里非常安静，没有任何人影。</p>
+        <p class="text" id="text2">你在图书馆中闲逛，逛到了某个无人</p>
+        <p class="text" id="text3">问津的角落，在厚厚的灰尘之下，你发现了一本笔记本。这似乎是某个人的日记本，上面并没有写名字，字迹有些褪色，似乎有很久的历史了。</p>
+        <p class="text" id="text4">300年9月1日</p>
+        <p class="text" id="text5">正式和兄长升入高中了，可以开始接触有关“主脑”的事情了。</p>
+        <p class="text" id="text6">真希望这个世界能在兄长和我的努力下变得更好。</p>
+        <p class="text" id="text7">301年7月10日</p>
+        <p class="text" id="text8">关于“编码”系统的更新我大概有了一些想法……现在的法治还不够完备，不如把法律法规加入系统中……</p>
+        <p class="text" id="text9">这应该是是个不错的想法，兄长也很支持我。</p>
+        <p class="text" id="text10">302年3月6日</p>
+        <p class="text" id="text11">“编码”系统正式安装在了“主脑”上，这是我第一次独立开发一个系统。</p>
+        <p class="text" id="text12">希望事情能像我想的发展的那么顺利吧。</p>
+        <p class="text" id="text13">加油！</p>
+        <p class="text" id="text14">后面几页都被撕掉了，不知道究竟写了些什么。</p>
+        <p class="text" id="text15">“又是日记？”显然，日记的主人建立了编码系统，所以显然应该是西宫兄弟中的一个，但你还无法确定究竟是谁。不过，西宫初的形象，在你心中变得越来越清晰。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>守夜人基地</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/N1_night-watchman.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(11);
+            addclue("A",10);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <img src="../../image/pegion_undiscovered.png" class="pigeon" id="pigeon_3" onclick="pegion_discovered()"> 
+    <div id="selection-set">
+        <p><input type="button" value="回酒店去睡觉" class="selection_icon" onclick="travel('../DAY2/D2_residence-community1.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">困意渐起，但你还不想入睡，“再四处看看吧。找找守夜人的驻地。”在这五颜六色的光华中闲逛，不知怎么的，你开始觉得那些造型别致、轮廓优美、与环境搭配得当的建筑有些单调——没有了不完美的衬托，再美的东西也显得千篇一律。</p>
+        <p class="text" id="text2">【你】：“藏匿一片树叶最好的地方是森林”，如果守夜人的基地也是这个风格，那可真不知道什么时候才能找得到。</p>
+        <p class="text" id="text3">忽然，你发现了一栋与众不同的建筑。它黑色的磨砂质感让它在一众玻璃般的建筑中格外突出，带着一股严肃庄重的气息，仿佛是一只沉睡在繁华大地的巨龙，给游人以无形的压力感。你：这就一定是基地了。</p>
+        <p class="text" id="text4">这栋建筑的入口处设置了人脸识别系统，你走上前去，惊讶地发现自己竟然能通过这个识别。</p>
+        <p class="text" id="text5">大门缓缓打开，充满生活气息的屋子出现在你的面前，沙发上正有两个人相对而坐，手中都端着一杯不知名的饮料，见你进入，他们稍显惊讶地睁大了眼睛，将你从头到尾打量了一遍。</p>
+        <p class="text" id="text6">【你】：你好，我是首都的调查员，不好意思打扰了，请问这是哪里？</p>
+        <p class="text" id="text7">【守夜人1】：这里是长东的守夜人基地，我们不欢迎外来人员的到来——你是怎么进来的？</p>
+        <p class="text" id="text8">【你】：我也是守夜人，所以门禁系统才会允许我进入。</p>
+        <p class="text" id="text9">奇怪的是，当他们很快得知你也是守夜人之后，他们对你态度变得微妙起来——原本欢脱的林远也变得沉默，对你关于失踪案件的询问更是三缄其口。两人似乎对你的到来感到担忧，希望你尽快离开，似乎是在隐瞒什么。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

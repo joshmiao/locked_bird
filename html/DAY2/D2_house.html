@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>住宅</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_house.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(14);
+            addclue("A",10);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="回到居民区" class="selection_icon" onclick="travel('D2_residence-community1.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">【你】：“住在这里的应该都是本地人，他们对长东的了解大概率比较全面。”</p>
+        <p class="text" id="text2">你走入住宅区。这是一个由若干公寓楼构成的区域，中央摆放着一些机器，可以从中购买生活所需品，旁边还设置了一个小型医院和广场，不过并没有人去往那边。稍稍有些失望，你快步离开了这里。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

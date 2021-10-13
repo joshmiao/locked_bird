@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>狂热者的不满</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background:url("../../image/background/R_bad-ending.jpeg")}</style>
+    <script>
+        function bad_ending_2()
+        {
+            var waittime=20;
+            var account=sessionStorage.getItem("locked_bird_account");
+            var achievementid="locked_bird_"+account+"achievement5";
+            if(localStorage.getItem(achievementid)==null)
+            localStorage.setItem(achievementid,"false");
+            if(localStorage.getItem(achievementid)=="false")
+            {
+                alert("获得成就：实验室有鬼？\n (即将返回首页)");
+                waittime=3000;
+                localStorage.removeItem(achievementid)
+                localStorage.setItem(achievementid,true);
+
+                var d=new Date();
+                var gametime=""+d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate()+"/"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+                localStorage.setItem(achievementid+"time",gametime);
+            }
+            setTimeout("backindex()",waittime);
+        }
+    </script>
+</head>
+<body onload="Initial()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="实验室有鬼？" class="selection_icon" onclick="bad_ending_2()"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">【你】：想不到这扫描仪这么灵敏，算了，还是——啊！！！</p>
+        <p class="text" id="text2">你想看清那到底是什么，才发现自己什么都看不见。扫描仪发出的激光直接蒸发了你胸腔里那颗跳动的心脏，其散射又顺便烧穿了视网膜，让你永久失明——当然，你没有机会失明那么久。</p>
+        <p class="text" id="text3">你只惊愕了一瞬，之后，剧烈的痛楚便占满了你的神经。</p>
+        <p class="text" id="text4">你痛不欲生，不过还算有个好消息：你很快就会“如愿”。</p>
+        <p class="text" id="text5">……</p>
+        <p class="text" id="text6">你感觉无比寒冷。世界慢慢消失，方才的剧痛已然不再，只剩下一片梦一般的麻木。</p>
+        <p class="text" id="text7">似乎有渺远的歌声从遥远的地方飘来，不可抗拒地牵着你的意识一直坠落，坠落，坠落……</p>
+        <p class="text" id="text8">自己竟然就这么糊里糊涂地死了？如此无足轻重、不值一提？这是真的吗？</p>
+        <p class="text" id="text9">这个问题你再也无法回答了。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

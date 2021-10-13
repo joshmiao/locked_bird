@@ -1,0 +1,110 @@
+<html>
+<head>
+    
+    <title>团队成员</title>
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <style>
+        @import url(../../css/fonts.css);
+        body{
+            background: url(../../image/intro/developer.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .menu{ 
+            margin-top: 0px;
+            float: right;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .menu:hover{ 
+            background-color: rgba(231, 157, 18, 0.459);
+            transition-duration: 0.4s;
+            cursor: url(../../image/pointer.ico),auto;
+        }
+        #main_box{
+            margin: auto;
+            margin-top: 1%;
+            width: 85%;
+            padding: 5px;
+            padding-bottom: 30px;
+            border-radius: 15px;
+            background-color: rgba(50, 50, 50, 0.6);
+            text-align: center;
+        }
+        #title{
+            color: wheat;
+            font:65px HYShangWeiShouShuW-Regular; 
+        }
+        .intro-box{
+            display: inline-block;
+            height: 450px;
+            width: 270px;
+            margin: 5px;
+            padding: 15px;
+            border-radius: 20px;
+            background-color: rgba(50, 50, 50, 0.7);
+            color: rgba(245, 222, 179);
+            font :60px FZZhaoMFKSJF;
+        }
+        .intro-box:hover{
+            background-color: rgba(75, 75, 75, 0.7);
+            transition-duration: 0.6s;
+            cursor: url(../../image/pointer.ico),auto;
+        }
+        .photo{
+            height: 170px;
+            width: 170px;
+            border-radius: 50%;
+            margin-top:40px;
+            margin-bottom: 20px;
+        }
+        .icon{
+            height:100px;
+            width:100px;
+        }
+        .intro-text{
+            font-size: 30px;
+            line-height: 2em;
+        }
+        .note{
+            font-size: 20px;
+            color: #909090;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <span class="option"><img src="../../image/back1.png" onclick="window.location.replace('../index_menu/about.html')"></span>
+    </div>
+    <div id="main_box">
+        <h1 id='title'>OurCraft团队</h1>
+        <div class="intro-box" onclick="window.location.replace('./myk.html')"> 
+            <div><img src="../../image/intro/myk-photo.jpg" class="photo"></div> 
+            <!--div><img src="../../image/team.png" class="icon"></div-->
+            <div>苗沂坤</div>
+            <div class="intro-text">CIO、美工</div>
+            <div class="note">个人主页...</div>
+        </div>
+        <div class="intro-box" onclick="window.location.replace('./hj.html')">
+            <div><img src="../../image/intro/hj-photo.jpg" class="photo"></div>
+            <div>何骏</div>
+            <div class="intro-text">JavaScript工程师</div>
+            <div class="note">个人主页...</div>
+        </div>
+        <div class="intro-box" onclick="window.location.replace('./jcg.html')">
+            <div><img src="../../image/intro/jcg-photo.png" class="photo" style="border-radius: 0;"></div>
+            <div>贾昌国</div>
+            <div class="intro-text">HTML工程师</div>
+            <div class="note">个人主页...</div>
+        </div>
+        <div class="intro-box" onclick="window.location.replace('./fj.html')"> 
+            <div><img src="../../image/intro/fj-photo.jpeg" class="photo"></div>
+            <div>封璟</div>
+            <div class="intro-text">游戏策划</div>
+            <div class="note">个人主页...</div>
+    </div>
+</body>
+</html>

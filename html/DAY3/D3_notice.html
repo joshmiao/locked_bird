@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>公告处</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_notice.jpg");}</style>
+</head>
+<body onload="Initial(25)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="去教育区调查" class="selection_icon" onclick="travel('D3_education-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这是一个张贴着各种公告的地方，上面画着整个长东的地图。十分不可思议的是，这里没有电子屏幕，一切公告都是打印后张贴在上面的，实在是复古到了极点。</p>
+        <p class="text" id="text2">你仔细观察了地图，发现地图上只有浮空层的一部分和地下层的地图，似乎有些地方被人为的撕开了。</p>
+        <p class="text" id="text3">不过，整个公告处最醒目的公告却是一个疯狂的反叛分子的——他杀死某企业大小姐，并发出革命宣言。</p>
+        <p class="text" id="text4">【你】：实在是没想到，居然这么快就开始了！话说，这一整个浮空区，应该没有比我这个外人还要了解那个暗中的革命组织的人了吧。这还真是讽刺。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>工厂</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D1_factory.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(7);
+            addclue("A",10);
+            addclue("B",10);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)"> 
+    <div id="selection-set">
+        <p><input type="button" value="回工业区看看" class="selection_icon" onclick="travel('D1_industrial-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">你向厂房走去，一位笔直站立的保安正立在门前的岗亭内。确认过你们的通行芯片后，保安点了点头，示意你们可以进入了。</p>
+        <p class="text" id="text2">你边走边参观工厂，这似乎是某种原材料的处理厂，放眼望去，岗位上全是机器，没有一个人影。进入工厂办公室，一个清瘦的人影正立在哪里，似乎在向上级汇报状况，见你们来了，他显得很惊讶。</p>
+        <p class="text" id="text3">【白河】：您好，我是这里的负责人白河，请问您有什么事情吗？</p>
+        <p class="text" id="text4">【你】：我是首都派来的调查员，想看看这里的情况。请问你们这里没有人工劳动力吗？</p>
+        <p class="text" id="text5">【白河】：嗯，工厂并没有人工劳动力，现在大多行业都换做人工智能或者机器劳动了。……</p>
+        <p class="text" id="text6">当说到“人工劳动力”时，他的眼神中闪过了一丝难以掩饰的鄙夷，就像看到了什么极其恶心的东西，要用这目光剜去他们身上的一块肉一样。虽然随即就消失不见，但拥有多年察言观色经验的你还是看到了。</p>
+        <p class="text" id="text7">【白河】：这工厂其实没有什么好看的，建议您前往商业区或者浮空层参观。</p>
+        <p class="text" id="text8">你们又聊了一会，见到这工厂确实乏善可陈，你也只好离去。</p>
+        <p class="text" id="text9">【你】：那么，人们都到哪里去了呢……</p>
+        <p class="text" id="text10">你逐渐意识到，长东的繁华并没有那么简单。</p>
+    </div>            
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

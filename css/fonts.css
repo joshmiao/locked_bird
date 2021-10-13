@@ -1,0 +1,21 @@
+/*字体集合*/
+@font-face {
+    font-family: "HYShangWeiShouShuW-Regular";
+    src: url(../fonts/HYShangWeiShouShuW.ttf);
+}
+@font-face {
+    font-family: "HanSansCN-Regular";
+    src: url(../fonts/SourceHanSansCN-Regular.otf);
+}
+@font-face {
+    font-family: "FZZhaoMFKSJF";
+    src: url(../fonts/FZZhaoMFKSJF.ttf);
+}
+@font-face {
+    font-family:"FZSXSLKJW";
+    src: url(../fonts/FZSXSLKJW.TTF);
+}
+@font-face {
+    font-family: "FZZJ-LJDXKJW";
+    src: url(../fonts/FZZJ-LJDXKJW.TTF);
+}

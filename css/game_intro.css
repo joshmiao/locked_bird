@@ -1,0 +1,38 @@
+/*游戏介绍页面样式*/
+@import url(fonts.css);
+body{
+    background-color: #404040;
+}
+#title{
+    position:absolute;
+    top:1%;
+    left: 20%;
+    color: wheat;
+}
+.menu{ 
+    margin-top: 0px;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.menu:hover{ 
+    background-color: rgba(231, 157, 18, 0.459);
+    transition-duration: 0.4s;
+    cursor: url(../image/pointer.ico),auto;
+}
+#title{
+    text-align: center;
+    font: 80px HYShangWeiShouShuW-Regular; 
+}
+#intro-box{
+    position: absolute;
+    top:10%;
+    left:2%;
+    width: 90%;
+    color: rgb(211, 192, 158);
+}
+p,ul{
+    font:20px HanSansCN-Regular;
+    text-indent: 2em;
+}

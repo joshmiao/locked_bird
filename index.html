@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>《Locked Bird》</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="./image/locked-bird.ico" >
+    <script src="script/index_menu.js"></script>
+    <script src="script/general.js"></script>
+    <script src="script/index.js"></script>
+</head>
+<body onload="Init()">
+    <audio src="./bgm/background_music.mp3" controls="controls">背景音乐</audio>
+    <div id="account">您好，username！</div> 
+    <div id="title"><img src="./image/Locked Bird.svg"></div>
+    <div id="line1"><input type="button" value="继续游戏" onclick="continuegame()" class="index-icon">&emsp;<input type="button" value="新游戏" onclick="newgame()" class="index-icon">&emsp;<input type="button" value="读取存档" onclick="savepage()" class="index-icon"></div>
+    <div id="line2"><input type="button" value="成就" onclick="achievements()" class="index-icon">&emsp;<input type="button" value="" onclick="log()" class="index-icon" id="log">&emsp;<input type="button" value="关于" onclick="about()" class="index-icon"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>游戏背景说明</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D1_background.jpg");}</style>
+</head>
+<body onload="Initial(1)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="作为调查人进入长东" class="selection_icon" id="option1" onclick="travel('D1_welcome-guests.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()" onkeydown="nextlog(event)">
+        <p class="text" id="text1">长东，旅游与科技之都，集当今尖端技术之大成，你能想到的任何属于这个时代的技术都能在长东找到。</p>
+        <p class="text" id="text2">发达的科技为这座城市带来了极高的生产力，同时带动经济发展、产生各种效益。它宛若一座远离世俗喧嚣的“海上乌托邦”，吸引无数旅客前来参观。</p>
+        <p class="text" id="text3">然而，从某一天开始，这样一座运作有序的城市，却被一连串毫无线索可言的失踪事件打破了平静。长东的高层在事发一个月后依然无法破案，他们判断可能有“危险物”介入。最终，长东市市长西宫止选择向首都的总部求助。</p>
+        <p class="text" id="text4">从那一刻起，作为调查员，你登上了名为“长东”的舞台……</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

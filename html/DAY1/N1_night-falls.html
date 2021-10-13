@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>夜幕降临</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/N1_night-falls.jpg");}</style>
+</head>
+<body onload="Initial(10)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="回酒店休息" class="selection_icon" onclick="travel('../DAY1/N1_hotel.html')"></p>
+        <p><input type="button" value="出去逛逛" class="selection_icon" onclick="travel('N1_night-watchman.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">夜幕降临，白天晴朗湛蓝的天空在晚上被长东光怪陆离的人造光填满。鳞次栉比的高楼分割天穹，数不清数量的光源把天空染上五彩斑斓、各不相同的碎块，无数色彩、声音在这一方空间中交织，过高的信息密度使人们的大脑过载，几乎迷失在这片纷乱和鲜明中。</p>
+        <p class="text" id="text2">然而，你却隐隐约约地感到不安，如芒在背。也许是因为这景象与自己的调查目标反差过大了吧。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>酒吧</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_bar.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(20);
+            addclue("A",10);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="回到生活区" class="selection_icon" onclick="travel('D2_living-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">在一片灯红酒绿中，你发现了最明亮的一处。店外的灯牌闪烁着，看来质量不是很好，但这并不耽误你认清灯牌上的字——“旅鸽”。</p>
+        <p class="text" id="text2">这座位于小巷子里的奇怪酒吧门前来往的人很多，进出不停，很是热闹，不知其中究竟有什么吸引人的地方。</p>
+        <p class="text" id="text3">进入酒吧，与外边的花里胡哨不同的是，酒吧内的装修极为清新素雅，深蓝色的灯光下在这里蒙上温柔的氛围，酒吧内悠扬的音乐不断，顾客们的私语融入音乐中，并不显得吵闹，反而很是温和。</p>
+        <p class="text" id="text4">你发现一个守夜人打扮的人正在跟一个穿着白大褂的男人聊天，他和你昨天在守夜人基地见到的那位十分相似。</p>
+        <p class="text" id="text5">【守夜人】：……西宫止把首都那边的人喊过来了。</p>
+        <p class="text" id="text6">【穿着白大褂的男人】：哦，是这样吗？</p>
+        <p class="text" id="text7">【守夜人】：嗯……你不要太松懈了，他们可不会像我们一样，放你们搞事情。</p>
+        <p class="text" id="text8">【穿着白大褂的男人】：没关系……只要他还在，一切就都会迎刃而解的……</p>
+        <p class="text" id="text9">【守夜人】：……他已经很累了。</p>
+        <p class="text" id="text10">【穿着白大褂的男人】：不，怎么会呢？神明怎么会累呢？</p>
+        <p class="text" id="text11">【守夜人】：……</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

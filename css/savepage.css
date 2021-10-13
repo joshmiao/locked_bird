@@ -1,0 +1,48 @@
+/*存档页面样式文件*/
+@import url(fonts.css);
+/*背景*/
+body{
+    background: rgb(80, 80, 80);
+}
+/*菜单*/
+.menu{ 
+    float: right; 
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.menu:hover{
+    cursor: url(../image/pointer.ico),auto;
+    background-color: rgba(231, 157, 18, 0.459);
+    transition-duration: 0.4s;
+}
+/*存档盒子*/
+.box {
+    color: rgba(45, 46, 46, 0.979); 
+    background: rgb(236, 235, 235);
+    width: 85%;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1.5%;
+    border-radius: 30px;
+    font: 40px HYShangWeiShouShuW-Regular;
+}
+/*存档*/
+.file{
+    color: rgba(45, 46, 46, 0.979); 
+    background: rgb(236, 235, 235);
+    width: 85%;
+    padding: 40px;
+    text-align: left;
+    margin: auto;
+    margin-top: 0%;
+    border-radius: 30px;
+    font: 40px HYShangWeiShouShuW-Regular;
+}
+.file:hover{
+    background: rgb(179, 177, 177);
+    cursor: url(../image/pointer.ico),auto;
+    transition-duration: 0.4s;
+}

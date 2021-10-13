@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>居民区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_residence-community2.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(17);
+            addclue("A",10);
+            addclue("B",20);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="去演讲现场看看" class="selection_icon" onclick="travel('D2_speech.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">从废品堆中生生辟出一条路来，面前的空间再次变得宽广。但与上层截然不同，这一处的居民楼大多包裹着一层阴沉的灰色颜料，压抑不已。其中来往的人倒是多了不少，只是大多浑浑噩噩，仿佛行尸走肉。房顶站着不少鸟类，空气中偶尔传来它们的叫声。</p>
+        <p class="text" id="text2">你随手拦住了一个居民，他被拦下时愣了一下，才缓慢地转过身与你对视。见到你身上的衣物后，他深灰的眼睛亮了一瞬间，转眼间又重回雾蒙蒙的状态——似乎是羡慕，但很快又被无尽的空茫溶解。</p>
+        <p class="text" id="text3">【居民】：……啊？你……什么……</p>
+        <p class="text" id="text4">你尝试着与他交谈。他说话的语速非常缓慢，要思考很久才能回答，而且语序混乱、时常停顿。不过他知道的要比地面层的居民更多。</p>
+        <p class="text" id="text5">你艰难地理解着他说的话，把乱麻般的语言整理成清晰条理的信息，对长东的了解越来越深刻。</p>
+        <p class="text" id="text6">【居民】：有了分，就有了码嘛……都有的，没有没有的……分越多码越好……不过再好也好不过不是人的，那堆楼啥的比里面的人还好……</p>
+        <p class="text" id="text7">【居民】：……绿鸽？哦……他们啊……他们想着上去呢……不知道能不能成，能成可就好了……但怎么能成呢……不知道，我没在……啊！！</p>
+        <p class="text" id="text8">说着说着，忽然，他整个人像是触了电一般颤抖了一下，本就磕绊的讲述戛然而止。回过神来后，他的眼神被恐惧填满，再也不说一个字，慌张地逃跑了。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>商业区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_business-area.jpg");}</style>
+</head>
+<body onload="Initial(23),hideoption(1,0,0,0,24,0),hideoption(2,0,0,0,26,0)" onkeydown="nextlog(event)"> 
+    <div id="selection-set">
+        <p><input type="button" value="去商场逛逛" class="selection_icon" id="option1" onclick="travel('D3_grand-mall.html')"></p>
+        <p><input type="button" value="去别墅看看" class="selection_icon" id="option2" onclick="travel('D3_villa.html')"></p>
+        <p><input type="button" value="公告上写的啥" class="selection_icon" onclick="travel('D3_notice.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">转眼间到了第三天，你登上来浮空层的商业区。尽管都是商业区，但通过飞行工具抵达的属于浮空层的商业区与地面上的又有一些微妙的不同，这种感觉不太好描述，大致就像是小超市突然变成了大商场一般。</p>
+        <p class="text" id="text2">这里的建筑比起下面又升了一个档次，建筑风格统一，商场与别墅交叉着树立在街道两侧。来这上面的游客少了不少。这里和昨天那里简直是天壤之别；然而，现在的你可无心欣赏这美景——见过了穷人的惨状，便再也无法直视富人的幸福。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

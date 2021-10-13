@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>别墅</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_villa.jpg");}</style>
+</head>
+<body onload="Initial(26)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="回到商业区" class="selection_icon" onclick="travel('D3_business-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这是一栋立在商城旁边的别墅，透过围栏，你们能够望见一个花园，里面种了不少美丽的花，芬芳的气息自其中而来；然而，花园中却空无一人，似乎是这些娇嫩的花朵自己把自己保养得这么好似的。</p>
+        <p class="text" id="text2">【你】：又是一个精致过了头的富人家。唉……</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

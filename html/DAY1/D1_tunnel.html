@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>通道</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D1_tunnel.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(9);
+            addclue("A",20);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)"> 
+    <img src="../../image/pegion_undiscovered.png" class="pigeon" id="pigeon_2" onclick="pegion_discovered()">
+    <div id="selection-set">
+        <p><input type="button" value="夜幕降临" class="selection_icon" onclick="travel('N1_night-falls.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">周围实在是无趣，但又不太想原路返回，你只能在这错综复杂的小道中漫无目的地闲逛。</p>
+        <p class="text" id="text2">你穿过若干工厂，绕了一圈又一圈，最终停在了一条有些漆黑的小巷子里，你向前走去，被一道无形的屏障挡住了去路，芯片正提醒你“该区域无法进入”。</p>
+        <p class="text" id="text3">【你】：这个地方实在是隐蔽，如果不是碰巧，可能根本无法发现。但是……对，脚印、痕迹，这里明明不久前才有人来过——等等！”</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

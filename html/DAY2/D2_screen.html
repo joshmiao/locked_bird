@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>广场</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_screen.jpg");}</style>
+</head>
+<body onload="Initial(15)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="回到居民区" class="selection_icon" onclick="travel('D2_residence-community1.html')"></p>
+        <p><input type="button" value="玩小游戏" class="selection_icon" onclick="break_bricksgame()"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">青年渐渐远去，你心中百感交集。眼神放空，不经意间，你发现你在看着广场上的一块屏幕。</p>
+        <p class="text" id="text2">那块屏幕极其巨大，播送着最新的综艺节目，下方不断有新闻一样的字幕滑动。然而这块屏幕前一个人都没有，只有声音在空旷的广场上传播。</p>
+        <p class="text" id="text3">估计是发呆发得太久了，你的芯片发出了信号，提醒你应当支付一份积分，账单对象是公共节目频道。</p>
+        <p class="text" id="text4">积分可以通过小游戏获取。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

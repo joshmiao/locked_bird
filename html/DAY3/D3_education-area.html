@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教育区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_education-area.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(27);
+            hideoption(1,0,0,0,28,0);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="去纪念馆看看" class="selection_icon" id="option1" onclick="travel('D3_memorial-hall.html')"></p>
+        <p><input type="button" value="去办公区看看" class="selection_icon" onclick="travel('D3_administrative-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">离开公告处，你走向下一个区域——教育区。毫无疑问，这整个一层都是一间学校，一间大的学校，囊括了从幼儿园到大学毕业的所有教育阶段。</p>
+        <p class="text" id="text2">此时正在上课，而学生们的课业显然不会因为游客的来访而停下校园内静悄悄，只能听见吹过草坪的风声，还有各不相同、却又蕴含着某种整齐和规律的朗读声。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

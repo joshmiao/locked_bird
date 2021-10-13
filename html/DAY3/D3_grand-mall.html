@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>商场</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_grand-mall.jpg");}</style>
+</head>
+<body onload="Initial(24)" onkeydown="nextlog(event)">  
+    <div id="selection-set">
+        <p><input type="button" value="回到商业区" class="selection_icon" onclick="travel('D3_business-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这是一栋极高的大厦，大厦外部用华丽的字体书写着两个字：明光——第一天便给你留下印象的垄断公司名。现在，你知道它的影响不仅仅是垄断这么简单。</p>
+        <p class="text" id="text2">走入大厦，你可以看见每一位客人身前都有一位服务员在为他们介绍些什么，十分贴心。你走进来的那一刻，同样有一位清秀的服务员向你走来，朝你鞠了个躬。</p>
+        <p class="text" id="text3">【服务员】：欢迎光临，请问有什么能帮到您的吗？</p>
+        <p class="text" id="text4">“就不该进来。呵，果然，商店都是一个样。”这样想着，你快步走出了大门。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

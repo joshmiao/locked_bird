@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>迎宾场所</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background: url("../../image/background/D1_welcome-guests.jpg");}</style>
+</head>
+<body onload="Initial(2)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="选择安装芯片" class="selection_icon" onclick="travel('D1_business-area.html')"></p>
+        <p><input type="button" value="拒绝按照芯片(可能被逐出长东)" class="selection_icon" onclick="travel('../game-results/R1_being-driven.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">从首都乘上通往长东的列车，蔚蓝深邃的海面映入视野后不过一瞬间就黯然失色，取而代之的是曲折蜿蜒的海岸线、鳞次栉比的大厦、边际工厂的炊烟、以及最引人注目的——悬浮在地面城市之上，宛若高塔顶端钟楼般的板块。</p>
+        <p class="text" id="text2">然而，面对此番美景，你却没什么心思去欣赏。</p>
+        <p class="text" id="text3">【你】：“毫无线索的失踪”……</p>
+        <p class="text" id="text4">【你】：现在科技如此发达，据我所知，已经很久没有出现过如此棘手的悬案了，更何况还是在长东。以长东的刑侦技术都一筹莫展，这事一定不会简单。</p>
+        <p class="text" id="text5">在这沉思中，你抵达了位于长东商业区外的港口，港口附近是连接长东内城与外城的一道关卡，一群黑衣人正在那里迎接你们。</p>
+        <p class="text" id="text6">【黑衣人】：十分抱歉，西宫止市长工作正忙，恕暂不能接待，您可以先自行调查。按照长东的规定，我们需要将一枚游客芯片安装在您的后脖颈中，希望您见谅。</p>
+        <p class="text" id="text7">【黑衣人】：需要提醒您的是，如果芯片丢失或者被人以强制手段取出，您可能被视作入侵者而被驱逐，甚至被攻击，所以还请您妥善保管、配合工作。</p>
+    </div>            
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

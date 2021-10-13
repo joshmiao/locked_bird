@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>群星闪烁之际</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/R5_help-XiGongchu.jpg");}</style>
+    <script>
+        function true_ending()
+        {
+            var waittime=20;
+            var account=sessionStorage.getItem("locked_bird_account");
+            var achievementid="locked_bird_"+account+"achievement9";
+            if(localStorage.getItem(achievementid)==null)
+            localStorage.setItem(achievementid,"false");
+            if(localStorage.getItem(achievementid)=="false")
+            {
+                alert("获得成就：群星闪耀之际！\n (即将返回首页)");
+                waittime=3000;
+                localStorage.removeItem(achievementid)
+                localStorage.setItem(achievementid,true);
+
+                var d=new Date();
+                var gametime=""+d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate()+"/"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+                localStorage.setItem(achievementid+"time",gametime);
+            }
+            setTimeout("backindex()",waittime);
+        }
+    </script>
+</head>
+<body onload="Initial(36)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="群星闪耀之际" class="selection_icon" onclick="true_ending()"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这千钧一发的一刻容不得你思考。经历了这一切，你已经深刻地了解到了这座繁华的城市下面到底压着多少黑暗。你无比确定，要是让西宫止继续推进他的计划，还会有更多底层人民在外界游客看不见的地方被压迫至死。“这样的统治决不能继续下去！现在！就是现在！”</p>
+        <p class="text" id="text2">蠕动的白色虫子散落一地，他缓缓抬起手，下一瞬间，它们便消失殆尽，连尘埃都没有留在原地。他在闪烁的蓝光中站立，身后流动的字符宛若在吟诵属于他的赞歌，在空气中打转的星星点点却有点莫名的悲伤，盘旋在他的身侧，起起伏伏、连绵不断。</p>
+        <p class="text" id="text3">你安静地注视着他，注视着他摘下面具，露出了那副与倒在地上的人相仿的面容。他雪白的发丝滑落在耳侧，眼中隐隐有什么在闪烁着打转，却没有探出。此刻，正是群星最为闪烁之际，也是群星将落下帷幕之际。</p>
+        <p class="text" id="text4">“我很感谢你们……在事情彻底结束后，我会自愿跟从守夜人前往首都，接受我应有的惩罚。”他向你们深深鞠了一躬，尽显淡然大气。</p>
+        <p class="text" id="text5">你有太多话想对他说。这样一个复杂的人啊……少年时发明了巩固统治的“编码”系统，青年时却在见到底层人民的惨状之后，毅然决定推翻他的家族用尽上下三代才建立起来的制度。</p>
+        <p class="text" id="text6">由于能力有限，他组建的组织没有详细可行的纲领，没有坚实全面的结构，然而人们最朴素的愿望和力量却让它最终夺取了胜利……</p>
+        <p class="text" id="text7">一瞬间，你的脑海中闪过一万句话语，可最终说出来的只有一句意义不明的询问：“你……觉得你们……能行吗？”</p>
+        <p class="text" id="text8">青年温和地笑了。“我不知道你说的‘能行’是什么意思。如果你想问‘我们的革命能否成功’……说实话，组织里没人能有绝对的信心，我也没有。今天，倘若没有各位的帮助，我们夺取革命的胜利会难得多。甚至……可能无异于飞蛾扑火。所以，再次谢过各位了！”说着，他又向你们深深鞠了一躬。</p>
+        <p class="text" id="text9">“如果你是想问，我们能不能实现我们的目标，能不能不重蹈覆辙、让所有人都能沐浴光明”，青年接着说到，他的眼神中罕见的流露出惆怅和担忧，“我更是说不准。</p>
+        <p class="text" id="text10">但我敢保证：我将会和我志同道合的人们一起，用整个长东的科技和土地，全力为人们开辟出一个新的可能。哪怕最后失败了，也能为再后来的人积累经验。不管怎么说，现在我们拥有的资源可比以前窝在地下多多了。”</p>
+        <p class="text" id="text11">“你们的组织……”你咽下一口唾沫，润湿发干到难受的嗓子，艰难地挤出这几个字。</p>
+        <p class="text" id="text12">“我知道，近乎狂热的个人崇拜。我们组织的问题比你想象的还要多得多，有的时候，我甚至都觉得我是在领导一个邪教……”青年无奈地笑了笑。</p>
+        <p class="text" id="text13">“然而，相信你也开始理解了，环境对人的影响是多么深刻、多么不可抗拒。看看这明媚的阳光、看看这湛蓝的海和天吧！一旦走出了那昏暗狭窄的地下，我相信，人们是可以抛弃过去那扭曲的仇恨，去拥抱这崭新的生活的。”他的声音不大，但你听来却振聋发聩。</p>
+        <p class="text" id="text14">“全新的未来，在向我们招手呐！”站在浮空层的顶端，一位青年向着无尽的时间和空间、无尽的可能与选择，伸出了自己的双臂。</p>
+    </div>                        
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option"onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option"onclick="showmap()">
+    </div>
+</body>
+</html>

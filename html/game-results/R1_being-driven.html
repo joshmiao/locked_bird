@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>违背规则之例</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background:url("../../image/background/R_bad-ending.jpeg")}</style>
+    <script>
+        function bad_ending1()
+        {
+            var waittime=20;
+            var account=sessionStorage.getItem("locked_bird_account");
+            var achievementid="locked_bird_"+account+"achievement4";
+            if(localStorage.getItem(achievementid)==null)
+            localStorage.setItem(achievementid,"false");
+            if(localStorage.getItem(achievementid)=="false")
+            {
+                alert("获得成就：违背规则之例！\n (即将返回首页)");
+                waittime=3000;
+                localStorage.removeItem(achievementid)
+                localStorage.setItem(achievementid,true);
+
+                var d=new Date();
+                var gametime=""+d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate()+"/"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+                localStorage.setItem(achievementid+"time",gametime);
+            }
+            setTimeout("backindex()",waittime);
+        }
+    </script>
+</head>
+<body onload="Initial()" onkeydown="nextlog(event)"><!--这里传入positionid-->  
+    <div id="selection-set">
+        <p><input type="button" value="违背规则之例" class="selection_icon" onclick="bad_ending1()"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">【你】：奇怪，请求明明是由城市的高层亲自发出，现在为何避而不见，还将我视作普通游客？这其中必有蹊跷。先小心行事，暂不携带为好。这样想着，在入城之前，你将芯片悄悄放在关卡之外。</p>
+        <p class="text" id="text2">然而，长东反应之激烈迅速，实在出乎你的意料：走入关卡的一瞬间，尖锐的警报就突然响起，温和的蓝光突变成刺眼的红，一旁待命的机器人立刻将你控制。</p>
+        <p class="text" id="text3">【你】：“请听我解释！我是首都派来的调查员，是受高层委托来帮助调查的！你们可以联系你们的上级核实我的身份！”</p>
+        <p class="text" id="text4">【你】：“我可以让接待我的人再向我提供一枚游客芯片！请给我一分钟，一分钟就够了！你们可以继续在一旁监视！”……</p>
+        <p class="text" id="text5">可是，任凭你如何解释，它们都毫无反应，好像没有语音识别模块一样。一旁的人们漠不关心，有几位甚至惊慌失措地逃开了，唯恐避之不及。“看来，用类似的话试图混进长东的偷渡者还真不少……”你苦笑。</p>
+        <p class="text" id="text6">正如黑衣人所说，你最终被这些机器人强制驱离长东。在那“高塔钟楼”彻底在视野中消失之前，你似乎看到了这座城市光鲜亮丽的表面下隐藏的黑暗。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option"onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option"onclick="showmap()">
+    </div>
+</body>
+</html>

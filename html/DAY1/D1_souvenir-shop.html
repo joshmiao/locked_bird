@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>纪念品店</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D1_souvenir-shop.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(5);
+            addclue("A",10);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)"> 
+    <div id="selection-set">
+        <p><input type="button" value="去大街上走走" class="selection_icon" onclick="travel('D1_street.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">你决定进店。这是一家看似简约的小店，内部装修精致，商品有序地摆放在货架上。你一进门，收银员就面带微笑地向你走来。</p>
+        <p class="text" id="text2">【收银员】：您好，请问有什么需要帮助的吗？</p>
+        <p class="text" id="text3">【你】：这是我第一次来长东，想买点纪念品，请问有什么推荐吗？</p>
+        <p class="text" id="text4">【收银员】：当然。先生您看下，我们这里都是明光公司生产的最正宗的纪念品，都获得了长东的官方认证……</p>
+        <p class="text" id="text5">【你】：等等，又是明光公司？街叫明光街，酒店叫明光酒店，商品也是明光生产的。看来明光公司是这条商业街的所有者啊，有点垄断的意味。</p>
+        <p class="text" id="text6">【收银员】：先生您看这边，这个周边产品很不错，它代表了长东……</p>
+        <p class="text" id="text7">让你略微失望，她只回答了你有关旅游和纪念品的各种问题；除此之外，她几乎一概不知，只会说“请去找相关的人员，我并不太清楚”，你只好作罢。</p>
+        <p class="text" id="text8">【你】：看来这里的确没有什么值得注意的事物，那就这样离开吧。</p>
+    </div>            
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>实验室</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_laboratory.jpg");}</style>
+</head>
+<body onload="Initial(31)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="去办公区2" class="selection_icon" onclick="travel('D3_administrative-area2.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这是被厚重大门掩盖的通道，需要某种权限才能进入。走进通道后，有脚步声从远方传来，似乎有人在深处巡逻，贸然进去会被发现。</p>
+        <p class="text" id="text2">幸好，青年给你的千纸鹤工作正常。几乎是在它们眼皮子底下，你潜入了这间实验室。</p>
+        <p class="text" id="text3">几个玻璃制的器皿陈列在实验室中央，一颗又一颗大脑挤在玻璃器皿中，鲜血似乎能透过玻璃涌向你。此外，桌子上还放着一些文件，似乎要凑近才能查看。你发现每个大脑上都连接着一个芯片一样的东西，芯片中心有一串编码，开头字母都是B和C。</p>
+        <p class="text" id="text4">【你】：唉，遭殃的总是……等等，不对！这些编号我见过！</p>
+        <p class="text" id="text5">你震惊地发现，这些编码恰好与那群找到尸体但失去了大脑的失踪者相同。</p>
+        <p class="text" id="text6">【你】：如果是旅鸽的青年杀害了这些的，他们的大脑又为什么会出现在这里？“所有被找到的失踪者都没有大脑”……难道，这是个高层特意放出的假消息，其实他们早就知道失踪案的真相？！</p>
+        <p class="text" id="text7">你立刻抓起桌上的文件，一目十行地浏览起来：</p>
+        <p class="text" id="text8">文件1号-关于长东失踪案的解决方案</p>
+        <p class="text" id="text9">内容：有关我市长期出现的失踪情况未能调查清缘由，本地处刑人机关也无法处理，只是告知疑似有危险物参与其中，建议我们放弃调查。</p>
+        <p class="text" id="text10">批注建议：向首都求助，让首都派遣处刑人参与案件。</p>
+        <p class="text" id="text11">附带便利贴：一行清秀的字体——“可以使首都处刑人背下失踪案的锅，如果调查清楚那些无原因失踪的案件，皆大欢喜。”</p>
+        <p class="text" id="text12">文件2号-关于大脑的储备与广告投放</p>
+        <p class="text" id="text13">56370号机器人向您报告：</p>
+        <p class="text" id="text14">已将“今日失踪案件频发，请居民注意自身安全，遇上凶手时，可以进行报备，违反规定作出反击行为。”的广告投放。</p>
+        <p class="text" id="text15">已回收违反规定的居民身体。</p>
+        <p class="text" id="text16">已取出大脑。</p>
+        <p class="text" id="text17">大脑储存完毕，已将尸体投放，并销毁监控与证据。</p>
+        <p class="text" id="text18">文件3号-关于第一起失踪案件</p>
+        <p class="text" id="text19">内容：目前仍未发现您弟弟的踪迹，申请再宽裕一些时间。</p>
+        <p class="text" id="text20">【你】：果然！！</p>
+        <p class="text" id="text21">看到“可以使首都处刑人背下失踪案的锅”，你气得简直要笑出来。从一开始，长东的高层就知道一切，他们只是装作不知道，以推进这见不得光的人体实验。等等，这么说也不完全正确——</p>
+        <p class="text" id="text22">【你】：“如果调查清楚那些无原因失踪的案件”，看来他们也不清楚“旅鸽”的能力。对，是两方共同导致了失踪，只是看起来一样罢了！</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

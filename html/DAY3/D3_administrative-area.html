@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>办公区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_administrative-area.jpg");}</style>
+</head>
+<body onload="Initial(29)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="去办公区2" class="selection_icon" onclick="travel('D3_administrative-area2.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">没有预兆地，第一天接待你们的黑衣人突然到来。</p>
+        <p class="text" id="text2">【黑衣人】：西宫止市长想要见您。”说到。经历了这一切，你早就心有准备。“好啊，就让我来会会你！</p>
+        <p class="text" id="text3">你在黑衣人的引领下穿过层层走廊，来到了一个办公室，在门前的机器识别过你们的身份后，首先映入你们眼帘的是一个颇有古典韵味的屏风，随即是两侧的玻璃，能够清楚地俯视下方的建筑——在外面时，你们却看不见办公室内的情景。</p>
+        <p class="text" id="text4">片刻，一位长相俊秀的青年迈着步子从屏风后走出。果然，他与先前见到的画像上的人几乎一模一样。这是一个生得极为优秀的青年，无法想象这样的人竟然在这个年纪就坐上了长东市市长的位置。</p>
+        <p class="text" id="text5">他的手上带着一双纯白色的手套，与一身黑西装相衬，显得严肃庄重。他本人柔和的气质则淡化了这种严肃感。这似乎是一个很有家教的人。他带着温和的笑意看向你们，柔声道：“诸位就是来自首都的处刑人吧，欢迎光临，我是长东市的现任市长，西宫止。”</p>
+        <p class="text" id="text6">接下来的交谈无非是官样套话，你甚至都记不太清你们究竟谈了些什么。也是，心里装的东西太多，这种废话当然记不住。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

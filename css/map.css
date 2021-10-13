@@ -1,0 +1,41 @@
+/*地图样式文件*/
+@import url(fonts.css);
+/*背景*/
+body{
+    background: url(../image/map/background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*菜单*/
+.menu{ 
+    float: right; 
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.menu:hover{
+    cursor: url(../image/pointer.ico),auto;
+    background-color: rgba(231, 157, 18, 0.459);
+    transition-duration: 0.4s;
+}
+/*地图标题*/
+h1{
+    text-align: center;
+    font-family: HYShangWeiShouShuW-Regular;
+    font-size: 50px;
+}
+hr{
+    border:2px solid;
+    margin: 0 80px 0 80px;
+}
+/*地图内容*/
+#map{
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px;
+    /*border-style:dashed;*/
+    text-align: center;
+}

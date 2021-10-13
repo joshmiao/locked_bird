@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>实验室</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_laboratory.png");}</style>
+</head>
+<body onload="Initial(21)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="被发现了" class="selection_icon" onclick="travel('../game-results/R3_being-discovered.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这是一道不易被察觉的暗门，掩藏在两边的墙壁之间，只露出一条小小的缝隙，似乎可以打开；不过门外蓝色的扫描仪阻止了你前进的脚步，把你拦了下来。</p>
+        <p class="text" id="text2">你设法进入暗门，发现这是一间实验室，设施非常齐全，一瞬间把这荒凉的地下层与地上层那顶尖的科技结合了起来。一众物品整齐地摆放着，桌面上堆积着少许文件和纸张。</p>
+        <p class="text" id="text3">你还发现了一些千纸鹤，它们和刚才那位青年给你的一样，似乎干扰了你芯片的运作。</p>
+        <p class="text" id="text4">在桌上的一众文件中，抛开你根本无法理解的实验报告，你找到了几张有日记字样的纸，似乎是随手在实验报告的角落中写下的。</p>
+        <p class="text" id="text5">306年5月9日</p>
+        <p class="text" id="text6">我来到了这里，我从未来到过的地方，我想改变这里，但我真的能做到吗……</p>
+        <p class="text" id="text7">306年5月10日</p>
+        <p class="text" id="text8">我……我突然有些怀疑我的决定了，难道要进行下去，我就免不了杀害别人吗……</p>
+        <p class="text" id="text9">尽管能看到他们所拥有的价值……或许是价值，我眼中的他们就如同一串串的数据。但眼睁睁那串数据消失……我是做不到的……</p>
+        <p class="text" id="text10">不，不是数据……那是生命。</p>
+        <p class="text" id="text11">307年10月11日</p>
+        <p class="text" id="text12">我将反监控设备批量化生产了，做成了千纸鹤的样子。</p>
+        <p class="text" id="text13">……真是具有童心，以至于我都忘记了我是个刽子手。</p>
+        <p class="text" id="text14">革命家，真是讽刺的称呼。</p>
+        <p class="text" id="text15">308年7月8日</p>
+        <p class="text" id="text16">革命已经到了最后的阶段。</p>
+        <p class="text" id="text17">这两年我是怎么过来的，我已经记不清了，只有偶尔写下的日记能窥见从前的我是什么模样了。</p>
+        <p class="text" id="text18">为了实现某样东西，人们总会走上曾经不想踏上的路，变成曾经不想变作的模样。然而那路上的牺牲我是不会忘的。</p>
+        <p class="text" id="text19">没有什么牺牲是必要的，只是因为我的无能才导致了这样的结果。</p>
+        <p class="text" id="text20">而我必须走下去，这是不可逆转的。</p>
+        <p class="text" id="text21">308年8月12日</p>
+        <p class="text" id="text22">希望一切顺利进行。</p>
+        <p class="text" id="text23">那时我就能抛却我神明的身份了。</p>
+        <p class="text" id="text24">一个凡人要想成为众人眼中的神明，那太难了，我不能松懈一刻，这个组织全是由我系成的。</p>
+        <p class="text" id="text25">有些自大的说，没有我，这个组织就不会存在了。</p>
+        <p class="text" id="text26">……（被划掉了什么，看不清，似乎划掉的是通行卡已经做好了）</p>
+        <p class="text" id="text27">这与我当初的愿望真的一样吗？</p>
+        <p class="text" id="text28">【你】：这……这是……</p>
+        <p class="text" id="text29">你心神激荡。一瞬间，所有的线索都在脑海中串联了起来：诡异的失踪案件、巨大的不平等、旅鸽、神秘的青年演讲者、“能看到他们所拥有的价值”……</p>
+        <p class="text" id="text30">【你】：对，他、他，他就是“危险物”！他有让人蒸发、不留任何痕迹的能力！是他靠着能力和智慧组建了旅鸽！他要发动革命，推翻这一切！而那些失踪案件，不过是最后高潮的准备和预演！长东，马上就要翻天了！</p>
+        <p class="text" id="text31">在极度激动中，你瞥见了一堆文件最下方的一张合照，照片上有四个人，不过脸都被蒙上了，只能大致分辨出这似乎是一张家庭合照。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>永眠</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/R4_murdered.jpg");}</style>
+    <script>
+        function bad_ending_4()
+        {
+            var waittime=20;
+            var account=sessionStorage.getItem("locked_bird_account");
+            var achievementid="locked_bird_"+account+"achievement7";
+            if(localStorage.getItem(achievementid)==null)
+            localStorage.setItem(achievementid,"false");
+            if(localStorage.getItem(achievementid)=="false")
+            {
+                alert("获得成就：永眠！\n (即将返回首页)");
+                waittime=3000;
+                localStorage.removeItem(achievementid)
+                localStorage.setItem(achievementid,true);
+
+                var d=new Date();
+                var gametime=""+d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate()+"/"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+                localStorage.setItem(achievementid+"time",gametime);
+            }
+            setTimeout("backindex()",waittime);
+        }
+    </script>
+</head>
+<body onload="Initial(35)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="永眠" class="selection_icon" onclick="bad_ending_4()"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这千钧一发的一刻容不得你思考。你看着西宫市繁华的景象，心中已经做出了决定。自己是个调查员，完成任务、调查出真相是自己的本职工作；但同时，作为首都政府的一员，自己更有责任维持社会的稳定。</p>
+        <p class="text" id="text2">“旅鸽”，你回想起在地下见到的那个组织——那个几乎算得上用仇恨和疯狂凝结起来的组织。长东的现状固然令人痛心，西宫初崇高的理想固然让你心动；但“旅鸽”一旦掌权，几乎一定会带领着所有人一起奔向仇恨的地狱。</p>
+        <p class="text" id="text3">“那个理想，还是由未来更有智慧的人们来完成吧……”你做出了选择。经历了这一切，你很清楚这意味着什么。能用违法规定的居民的尸体做实验，一旦他胜利，还会有更多底层人民惨遭杀害；</p>
+        <p class="text" id="text4">然而……只要能扼杀这疯狂的火，保持长东现有的繁华，这都是可接受的牺牲。何况，长东的现状尚还能用温和的改革去改变。“相信自己亲弟弟的反抗能促使西宫止重新思考当前的政策，现在，还是先阻止西宫初组织的底层人民带着仇恨毁灭一切吧。”</p>
+        <p class="text" id="text5">结束了吗？</p>
+        <p class="text" id="text6">周遭的蓝色字符依旧用肉眼不可见的速度消逝着，那道身影倒下的同时，整个空间变得安静极了。你们不由得松了一口气，全身心都在此刻放松了下来。然而，下一秒蓦然拉响的警报使你们不得不再次抬起头来。</p>
+        <p class="text" id="text7">曾与你们并肩作战的青年面带微笑地拍了拍手，一群银白的机器人正从你们身前涌来，你们无法数清他们的数量，只能看着他们将你们包围。</p>
+        <p class="text" id="text8">“感谢诸位的努力，”</p>
+        <p class="text" id="text9">青年眉眼弯弯，缓缓摘下手套，温和地看着你们。</p>
+        <p class="text" id="text10">“现在……诸位可以退场了。”</p>
+        <p class="text" id="text11">“什么？！你？！”</p>
+        <p class="text" id="text12">你震惊得几乎无法思考。</p>
+        <p class="text" id="text13">自己明明站在他的那边，为什么他还要杀人灭口？？</p>
+        <p class="text" id="text14">等等，难道……</p>
+        <p class="text" id="text15">嗯，是了。呵。</p>
+        <p class="text" id="text16">终究是自己的幼稚和短视葬送了自己——西宫止何等心狠手辣，哪会因为那些底层人民的反抗就改变自己的想法？自己隶属首都政府，还几乎知晓了长东的所有秘密，一切结束之后，他怎么可能让自己继续活着？</p>
+        <p class="text" id="text17">等等，不对，不对，自己是首都政府的调查员，如果在长东莫名其妙地遇害，势必会引起首都的怀疑。他怎么敢？！</p>
+        <p class="text" id="text18">——他的能力！！</p>
+        <p class="text" id="text19">一道惨白的闪电击穿迷雾，在这最后的时刻，你知晓了一切。为什么自己会觉得他的手套仿佛有生命一般；为什么他要收集大脑来做实验；为什么这么多年来，竟然没有一个他的亲信在了解了底层人民的惨状后反对他的主张……</p>
+        <p class="text" id="text20">自己真是蠢！弟弟有如此不可思议的能力，哥哥难道还能平凡吗？！他肯定不会让自己活着，但一定会让自己“活着”。“操控”“傀儡”……你脑海中闪过几个词，瞬间感到不寒而栗。</p>
+        <p class="text" id="text21">“至少，长东算是保住了吧……”</p>
+        <p class="text" id="text22">脸上还是一片惊恐，你连苦笑都来不及做出，便永远地失去了意识。</p>
+    </div>            
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

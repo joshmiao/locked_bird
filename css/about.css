@@ -1,0 +1,44 @@
+/*关于页面样式*/
+@import url(fonts.css);
+body{
+    background-image: url("../image/about.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#title{
+    margin-left: 360px;
+    margin-top: 10px;
+    height: 400px;
+    width: 800px;
+}
+.menu{ 
+    margin-top: 0px;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.menu:hover{ 
+    background-color: rgba(231, 157, 18, 0.459);
+    transition-duration: 0.4s;
+    cursor: url(../image/pointer.ico),auto;
+}
+#line{
+    position: absolute;
+    left: 18%;
+    bottom: 20%;
+}
+.button{
+    margin: 30px;
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: #c5c5c5;
+    font:50px HYShangWeiShouShuW-Regular;
+}
+.button:hover{
+    background-color: #a1a1a1;
+    cursor: url(../image/pointer.ico),auto;
+}

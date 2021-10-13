@@ -1,0 +1,96 @@
+/*游戏页面样式文件*/
+@import url(fonts.css);
+*{margin: 0;padding: 0;}
+/*缺省背景、元素无法选择设置*/
+body{
+    background:url(../image/background/default.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+/*菜单*/
+#menu{
+    position:absolute;
+    bottom: 1%;
+    right: 8%;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(201, 198, 198, 0.185);
+}
+#menu:hover{
+    transition-duration: 0.5s;
+    background: rgba(201, 198, 198, 0.966);
+}
+.option:hover{ 
+    background-color: rgba(231, 181, 18, 0.459);
+    transition-duration: 0.4s;
+    cursor: url(../image/pointer.ico),auto;
+}
+/*选项*/
+#selection-set{
+    position:absolute;
+    bottom: 60%;
+    left: 30%;
+}
+.selection_icon{
+    width: 600px; 
+    height:60px;
+    border-radius: 20px; 
+    margin:10px;
+    background-color: rgba(190, 255, 250, 0.7);  
+    color: rgb(17, 16, 100);
+    text-align: center;
+    font:40px HYShangWeiShouShuW-Regular;
+}
+.selection_icon:hover{
+    font-size:40px;
+    background-color: rgba(231, 157, 18, 0.459);
+    cursor: url(../image/pointer.ico),auto;
+}
+/*对话框*/
+#text-box{
+    position: absolute; 
+    bottom: 0%;
+    left: 10%;
+    width: 80%; 
+    height:20%; 
+    padding: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(37, 37, 37);
+    border-radius: 30px;
+    background: rgba(231, 231, 231, 0.774);
+}
+/*文本格式*/
+.text{
+    color: rgb(0,47,167);
+    font-size: 30px;
+    font-family: FZSXSLKJW;
+    text-align: left;
+    text-indent: 2em;
+}
+
+/*旅鸽元素*/
+.pigeon{
+    height:100px;
+    width:100px;
+}
+.pigeon:hover{
+    cursor: url("../image/question-mark.ico"),auto;
+}
+#pigeon_1{
+    float: left;
+}
+#pigeon_2{
+    position: absolute;
+    top: 2%;
+    right: 15%;
+}
+#pigeon_3{
+    float: right;
+}

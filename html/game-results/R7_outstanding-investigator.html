@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>出色的调查员</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/R7_outstanding-investigator.jpg");}</style>
+    <script>
+        function happy_ending()
+        {
+            var waittime=20;
+            var account=sessionStorage.getItem("locked_bird_account");
+            var achievementid="locked_bird_"+account+"achievement8";
+            if(localStorage.getItem(achievementid)==null)
+            localStorage.setItem(achievementid,"false");
+            if(localStorage.getItem(achievementid)=="false")
+            {
+                alert("获得成就：出色的调查员！\n (即将返回首页)");
+                waittime=3000;
+                localStorage.removeItem(achievementid)
+                localStorage.setItem(achievementid,true);
+
+                var d=new Date();
+                var gametime=""+d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate()+"/"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+                localStorage.setItem(achievementid+"time",gametime);
+            }
+            setTimeout("backindex()",waittime);
+        }
+    </script>
+</head>
+<body onload="Initial(35)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="出色的调查员" class="selection_icon" onclick="happy_ending()"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">这千钧一发的一刻容不得你思考。你看着西宫市繁华的景象，心中已经做出了决定。自己是个调查员，完成任务、调查出真相是自己的本职工作；但同时，作为首都政府的一员，自己更有责任维持社会的稳定。</p>
+        <p class="text" id="text2">“旅鸽”，你回想起在地下见到的那个组织——那个几乎算得上用仇恨和疯狂凝结起来的组织。长东的现状固然令人痛心，西宫初崇高的理想固然让你心动；但“旅鸽”一旦掌权，几乎一定会带领着所有人一起奔向仇恨的地狱。</p>
+        <p class="text" id="text3">“那个理想，还是由未来更有智慧的人们来完成吧……”你做出了选择。全力扼杀这疯狂的火，自己义不容辞。“长东的现状尚还能用温和的改革去改变，相信自己亲弟弟的反抗能促使西宫止重新思考当前的政策；现在，还是先阻止西宫初组织的底层人民带着仇恨毁灭一切吧。”</p>
+        <p class="text" id="text4">结束了吗？</p>
+        <p class="text" id="text5">周遭的蓝色字符依旧用肉眼不可见的速度消逝着，那道身影倒下的同时，整个空间变得安静极了。</p>
+        <p class="text" id="text6">“非常感谢各位的帮助。”西宫止温和地说。你凝视着他的眼睛，那眼神中有遗憾、不解，但却没有……悲伤？平生第一次，你怀疑自己因为情绪过于激动而做出了误判。然而……</p>
+        <p class="text" id="text7">“也许是我想多了吧。”毕竟一切都结束了，自己只不过是一位调查员罢了，没必要关心这么多。长东保住了，这才是最重要的。</p>
+        <p class="text" id="text8">你：他虽然智慧超群，但毕竟只是个人，如果所有的下属都反对改变现状，他自然无能为力。地下城的惨状，不能全怪他。</p>
+        <p class="text" id="text9">西宫初仍静静地躺在地上。</p>
+        <p class="text" id="text10">不久后，你离开了长东。这次，你总算有闲欣赏它的美了。环绕着玻璃制高楼的飞行轨道折射出光芒，却并不刺眼，蔚蓝的天空与海洋倒映在这座城市的每一处角落，从远处望去，精致得仿佛不属于这个世界。</p>
+        <p class="text" id="text11">这景色是如此的美妙，然而，你知道下面那不堪入目的肮脏和黑暗。</p>
+        <p class="text" id="text12">你：但愿有一天，那里的人也能和地上的居民一样，以最适合的方式度过自己的一生。</p>
+    </div>                        
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

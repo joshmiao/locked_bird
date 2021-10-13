@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>居民区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_residence-community1.jpg");}</style>
+</head>
+<body onload="Initial(13),hideoption(1,0,0,0,15),hideoption(2,0,0,0,14)" onkeydown="nextlog(event)">  
+    <div id="selection-set">
+        <p><input type="button" value="去广场看看" class="selection_icon" id="option1" onclick="travel('D2_square.html')"></p>
+        <p><input type="button" value="去住宅看看" class="selection_icon" id="option2" onclick="travel('D2_house.html')"></p>
+        <p><input type="button" value="进入连接区" class="selection_icon" onclick="travel('D2_connection-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">清早起床，你离开了酒店，来到了旁边的居民区继续调查。</p>
+        <p class="text" id="text2">不同于商业区玻璃制的建筑，居民区的建筑物充满了温馨的气息，他们外侧不再是冷冰冰的玻璃，而是刷上了暖色的油漆，没有褪色，鲜明靓丽，人相比之前也少了不少，只有几个似乎是本地居民的人穿梭在其间。</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

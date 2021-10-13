@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>连接区</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D2_connection-area.jpg");}</style>
+</head>
+<body onload="Initial(16),hideoption(1,0,0,0,17,0)" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="去居民区看看" class="selection_icon" id="option1" onclick="travel('D2_residence-community2.html')"></p>
+        <p><input type="button" value="去生活区看看" class="selection_icon" onclick="travel('D2_living-area.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">肮脏，恶臭，混乱，荒凉……即使听了青年的描述，你仍难以接受：在长东这样的城市竟会有这样的地方，这与长东给外界素来的印象截然不同，甚至让人有了一种强烈的不真实感。</p>
+        <p class="text" id="text2">说不清的复杂气味在空气中弥漫，昏暗的环境进一步恶化了人的感官体验。这是个落后的地方，与地上城市完全脱节。</p>
+        <p class="text" id="text3">面前有一坨铁山，你稳住心神仔细去看，才能把这一堆生锈的金属跟之前所见的购物机器联系起来。</p>
+        <p class="text" id="text4">【你】：它们和先前见到的那些是同一种产品，不过似乎是前代与现代的关系。</p>
+        <p class="text" id="text5">机器的外壁已经生锈，红棕色的痕迹攀上银白的机体，将应当干净的部位抹得肮脏。红色与绿色的指示灯不断闪烁，指示着程序似乎出现了一点故障——它实在是过于破旧了。</p>
+        <p class="text" id="text6">你拨开上面乱堆的杂物，发现这台机器似乎没有被怎么使用过，里面的物品全都整整齐齐的摆放着，扫描的地方积满了灰尘。</p>
+        <p class="text" id="text7">继续向前走，你遇到了更大的一堆废品，金属或者塑料制两两三三堆积在一起，将前进的道路挡得极为严实，阻碍了前进的脚步。</p>
+        <p class="text" id="text8">但即使如此杂乱，你也发现废品堆中偶尔会出现一些零件。</p>
+        <p class="text" id="text9">【你】：这似乎是某种可以运用在反监视领域的零件，不过制作者似乎失败了，零件损坏非常严重。</p>
+    </div>                  
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>

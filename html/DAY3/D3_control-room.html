@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>主脑控制室</title>
+    <link rel="stylesheet" href="../../css/gamepage.css" />
+    <link rel="shortcut icon" href="../../image/locked-bird.ico" >
+    <script src="../../script/jquery-3.6.0.min.js"></script>
+    <script src="../../script/general.js"></script>
+    <script src="../../script/gamepage.js"></script>
+    <style>body{background-image: url("../../image/background/D3_control-room.jpg");}</style>
+    <script>
+        function loadgame(){
+            Initial(34);
+            hideoption(1,0,70,0,0,0);
+        }
+    </script>
+</head>
+<body onload="loadgame()" onkeydown="nextlog(event)">
+    <div id="selection-set">
+        <p><input type="button" value="帮助西宫初" class="selection_icon" id="option1" onclick="travel('../game-results/R5_help-XiGongchu.html')"></p>
+        <p><input type="button" value="帮助西宫止" class="selection_icon" onclick="travel('../game-results/R7_outstanding-investigator.html')"></p>
+    </div>
+    <div id="text-box" onclick="in_animation()">
+        <p class="text" id="text1">那是一个悬浮在空中的巨大晶体，淡蓝色的荧光自它的内部弥漫开来，洒落在这个黑暗房间的每个角落，照亮了每一处。蓝绿的字符如同流水一般在晶体的表面倾落，融化在庞大数据流中，你无法辨别出其间到底隐藏了什么信息。</p>
+        <p class="text" id="text2">它就这样静静地停在房间的正中央，透着玻璃幕布与你们相遇。这便是长东的心脏，长东的大脑，那个传说中的“主脑”的真实面貌。</p>
+        <p class="text" id="text3">现在，这里多了两道夺目的身影。</p>
+        <p class="text" id="text4">“你确定要这么做吗？”</p>
+        <p class="text" id="text5">“我再确认不过了……哥哥。”</p>
+        <p class="text" id="text6">“我不明白，你为什么要这么做……为什么要离开浮空层，离开我。”</p>
+        <p class="text" id="text7">“……或许是因为一种奇怪的负罪感吧……现在不是叙旧的时间了。”</p>
+        <p class="text" id="text8">“你已经等不及了？呵……不愧是你啊，我的弟弟。”</p>
+    </div>      
+    <div id="menu">
+        <img src="../../image/save.png" class="option" onclick="showsave('save')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/load.png" class="option" onclick="showsave('load')">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/home.png" class="option" onclick="backindex()">&nbsp;&nbsp;&nbsp;
+        <img src="../../image/map.png" class="option" onclick="showmap()">
+    </div>
+</body>
+</html>
